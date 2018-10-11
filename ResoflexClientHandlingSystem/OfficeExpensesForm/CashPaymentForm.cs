@@ -72,6 +72,7 @@ namespace ResoflexClientHandlingSystem.OfficeExpenses
                 exp.Amount = int.Parse(inAmount.Text.ToString());
                 exp.Category = category.Text.ToString();
                 Database.addOfficeExp(exp);
+
                 this.Close();
             }
             else

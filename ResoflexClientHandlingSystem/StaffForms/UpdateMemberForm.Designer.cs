@@ -671,7 +671,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 493);
+            this.ClientSize = new System.Drawing.Size(809, 507);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.staffUpdBtn);
             this.Controls.Add(this.staffClearBtn);

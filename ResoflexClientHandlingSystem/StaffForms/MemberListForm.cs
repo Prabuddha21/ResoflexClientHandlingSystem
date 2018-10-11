@@ -133,6 +133,16 @@ namespace ResoflexClientHandlingSystem
             this.Close();
         }
 
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+            //EmployeeTaskTimeComparisonForm
+
+            StaffForms.EmployeeTaskTimeComparisonForm ttc = new StaffForms.EmployeeTaskTimeComparisonForm();
+            this.Hide();
+            ttc.ShowDialog();
+            this.Close();
+        }
+
         private void homeBtn_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
@@ -159,6 +169,55 @@ namespace ResoflexClientHandlingSystem
             MembersGrid.DataSource = searchFromStaff();
         }
 
+        private void fillTiles(int staffId)
+        {
+            try
+            {
+                MySqlDataReader reader = DBConnection.getData("select IFNULL(COUNT(distinct(proj_id)), 0) as count from event_technicians where staff_id=" + staffId);
+
+                while (reader.Read())
+                {
+                    TotalProjectsTile.Text = reader.GetInt32("count").ToString();
+                }
+
+                reader.Close();
+
+                reader = DBConnection.getData("select IFNULL(COUNT(event_id), 0) as count from event_technicians where staff_id=" + staffId);
+
+                while (reader.Read())
+                {
+                    TotalEventsTile.Text = reader.GetInt32("count").ToString();
+                }
+
+                reader.Close();
+
+                reader = DBConnection.getData("select IFNULL(COUNT(attendance_id), 0) as count from attendance where staff_id=" + staffId);
+
+                while (reader.Read())
+                {
+                    TotalHrsTile.Text = reader.GetInt32("count").ToString();
+                }
+
+                reader.Close();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Something went wrong!\n" + exc, "Staff Retreive", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void MembersGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = sender as DataGridView;
+
+            if (dgv.CurrentRow.Selected)
+            {
+                int stfID = Int32.Parse(MembersGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
+
+                fillTiles(stfID);
+            }
+        }
+        
         private void profilebtn_Click(object sender, EventArgs e)
         {
             ProfileForm prffrm = new ProfileForm();

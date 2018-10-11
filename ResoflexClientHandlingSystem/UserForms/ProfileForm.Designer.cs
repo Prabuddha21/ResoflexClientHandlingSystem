@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.txtUname = new MetroFramework.Controls.MetroTextBox();
             this.txtCurPass = new MetroFramework.Controls.MetroTextBox();
@@ -40,6 +41,7 @@
             this.metroLink6 = new MetroFramework.Controls.MetroLink();
             this.txtPass = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.schHome = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -277,15 +279,31 @@
             this.metroLabel1.Location = new System.Drawing.Point(238, 107);
             this.metroLabel1.MinimumSize = new System.Drawing.Size(140, 23);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(140, 23);
+            this.metroLabel1.Size = new System.Drawing.Size(0, 0);
             this.metroLabel1.TabIndex = 16;
             this.metroLabel1.WrapToLine = true;
+            // 
+            // schHome
+            // 
+            this.schHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.schHome.BackColor = System.Drawing.Color.Transparent;
+            this.schHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("schHome.BackgroundImage")));
+            this.schHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.schHome.Location = new System.Drawing.Point(438, 26);
+            this.schHome.Margin = new System.Windows.Forms.Padding(2);
+            this.schHome.Name = "schHome";
+            this.schHome.Size = new System.Drawing.Size(30, 24);
+            this.schHome.TabIndex = 17;
+            this.schHome.UseSelectable = true;
+            this.schHome.Click += new System.EventHandler(this.schHome_Click);
             // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 488);
+            this.Controls.Add(this.schHome);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroLink6);
             this.Controls.Add(this.txtPass);
@@ -321,5 +339,6 @@
         private MetroFramework.Controls.MetroLink metroLink6;
         private MetroFramework.Controls.MetroTextBox txtPass;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroButton schHome;
     }
 }

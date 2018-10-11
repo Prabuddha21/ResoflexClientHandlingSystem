@@ -187,6 +187,14 @@ namespace ResoflexClientHandlingSystem.UserForms
         private void metroLink5_Click(object sender, EventArgs e)
         {
 
-        }     
+        }
+
+        private void schHome_Click(object sender, EventArgs e)
+        {
+            Dashboard dsh = new Dashboard();
+            this.Hide();
+            dsh.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -69,6 +69,7 @@
             this.addNewDesTxtBox = new MetroFramework.Controls.MetroTextBox();
             this.errorProviderAddStaff = new System.Windows.Forms.ErrorProvider(this.components);
             this.homeBtn = new MetroFramework.Controls.MetroButton();
+            this.demo_stf_btn = new MetroFramework.Controls.MetroButton();
             this.profilebtn = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.AddMemberTab.SuspendLayout();
@@ -103,6 +104,7 @@
             // 
             // AddMemberTab
             // 
+            this.AddMemberTab.Controls.Add(this.demo_stf_btn);
             this.AddMemberTab.Controls.Add(this.htmlLabel2);
             this.AddMemberTab.Controls.Add(this.htmlLabel12);
             this.AddMemberTab.Controls.Add(this.htmlLabel11);
@@ -758,7 +760,7 @@
             this.htmlLabel16.AutoScroll = true;
             this.htmlLabel16.AutoScrollMinSize = new System.Drawing.Size(10, 0);
             this.htmlLabel16.AutoSize = false;
-            this.htmlLabel16.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.htmlLabel16.BackColor = System.Drawing.Color.LightSkyBlue;
             this.htmlLabel16.Controls.Add(this.clearNewDesBtn);
             this.htmlLabel16.Controls.Add(this.addNewDesBtn);
             this.htmlLabel16.Controls.Add(this.htmlLabel14);
@@ -793,7 +795,7 @@
             this.htmlLabel14.AutoScroll = true;
             this.htmlLabel14.AutoScrollMinSize = new System.Drawing.Size(39, 23);
             this.htmlLabel14.AutoSize = false;
-            this.htmlLabel14.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.htmlLabel14.BackColor = System.Drawing.Color.LightSkyBlue;
             this.htmlLabel14.Controls.Add(this.addNewDesTxtBox);
             this.htmlLabel14.Location = new System.Drawing.Point(78, 66);
             this.htmlLabel14.Name = "htmlLabel14";
@@ -850,6 +852,15 @@
             this.homeBtn.UseSelectable = true;
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
+            // demo_stf_btn
+            // 
+            this.demo_stf_btn.Location = new System.Drawing.Point(519, 283);
+            this.demo_stf_btn.Name = "demo_stf_btn";
+            this.demo_stf_btn.Size = new System.Drawing.Size(92, 28);
+            this.demo_stf_btn.TabIndex = 63;
+            this.demo_stf_btn.Text = "Demo";
+            this.demo_stf_btn.UseSelectable = true;
+            this.demo_stf_btn.Click += new System.EventHandler(this.demo_stf_btn_Click);
             // profilebtn
             // 
             this.profilebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -935,6 +946,7 @@
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel14;
         private System.Windows.Forms.ErrorProvider errorProviderAddStaff;
         private MetroFramework.Controls.MetroButton homeBtn;
+        private MetroFramework.Controls.MetroButton demo_stf_btn;
         private MetroFramework.Controls.MetroButton profilebtn;
     }
 }

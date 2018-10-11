@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AttedanceDSet" msprop:Generator_TableClassName="AttedanceDSetDataTable" msprop:Generator_TableVarName="tableAttedanceDSet" msprop:Generator_TablePropName="AttedanceDSet" msprop:Generator_RowDeletingName="AttedanceDSetRowDeleting" msprop:Generator_RowChangingName="AttedanceDSetRowChanging" msprop:Generator_RowEvHandlerName="AttedanceDSetRowChangeEventHandler" msprop:Generator_RowDeletedName="AttedanceDSetRowDeleted" msprop:Generator_UserTableName="AttedanceDSet" msprop:Generator_RowChangedName="AttedanceDSetRowChanged" msprop:Generator_RowEvArgName="AttedanceDSetRowChangeEvent" msprop:Generator_RowClassName="AttedanceDSetRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="u_name" msprop:Generator_ColumnVarNameInTable="columnu_name" msprop:Generator_ColumnPropNameInRow="u_name" msprop:Generator_ColumnPropNameInTable="u_nameColumn" msprop:Generator_UserColumnName="u_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_logged_in_hours" msprop:Generator_ColumnVarNameInTable="columnTotal_logged_in_hours" msprop:Generator_ColumnPropNameInRow="Total_logged_in_hours" msprop:Generator_ColumnPropNameInTable="Total_logged_in_hoursColumn" msprop:Generator_UserColumnName="Total_logged_in_hours" type="xs:double" minOccurs="0" />
+              <xs:element name="Total_work_hours" msprop:Generator_ColumnVarNameInTable="columnTotal_work_hours" msprop:Generator_ColumnPropNameInRow="Total_work_hours" msprop:Generator_ColumnPropNameInTable="Total_work_hoursColumn" msprop:Generator_UserColumnName="Total_work_hours" type="xs:double" minOccurs="0" />
+              <xs:element name="efficiency" msprop:Generator_ColumnVarNameInTable="columnefficiency" msprop:Generator_ColumnPropNameInRow="efficiency" msprop:Generator_ColumnPropNameInTable="efficiencyColumn" msprop:Generator_UserColumnName="efficiency" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

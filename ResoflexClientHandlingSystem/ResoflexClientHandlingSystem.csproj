@@ -113,6 +113,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AdminForms\AdminReports\DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AdminForms\AdminReports\MonthlyUsageReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -129,6 +134,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Sample.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdminForms\AdminReports\UserEfficiencyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserEfficiencyReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="AdminForms\UserAddForm.cs">
@@ -591,6 +602,11 @@
     <Compile Include="RequestForms\RequestForm.Designer.cs">
       <DependentUpon>RequestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="resoflexclienthandlingsystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>resoflexclienthandlingsystemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RequestForms\RequestReports\ChangeRequestReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -740,6 +756,40 @@
     <Compile Include="StaffForms\StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskEff.cs">
+      <DependentUpon>TaskEff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskEff.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskEff.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskEfficiency.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskEfficiency.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\StaffReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\StaffReportForm.Designer.cs">
+      <DependentUpon>StaffReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskDue.cs">
+      <DependentUpon>TaskDue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskDue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskDue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForms\StaffReports\TaskDuration.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskDuration.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TaskForms\TaskForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -789,6 +839,10 @@
     <EmbeddedResource Include="AdminForms\AdminReports\Sample.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Sample.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\AdminReports\UserEfficiencyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>UserEfficiencyReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForms\UserAddForm.resx">
       <DependentUpon>UserAddForm.cs</DependentUpon>
@@ -1080,6 +1134,17 @@
     <EmbeddedResource Include="StaffForms\StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StaffForms\StaffReports\TaskEfficiency.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TaskEfficiency.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForms\StaffReports\StaffReportForm.resx">
+      <DependentUpon>StaffReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForms\StaffReports\TaskDuration.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TaskDuration.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskForms\TaskForm.resx">
       <DependentUpon>TaskForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1119,6 +1184,17 @@
     </None>
     <None Include="AdminForms\AdminReports\DataSet2.xss">
       <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AdminForms\AdminReports\DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AdminForms\AdminReports\DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AdminForms\AdminReports\DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
     </None>
     <None Include="ClientForms\ClientReports\ProjectProfileDataSet.xsc">
       <DependentUpon>ProjectProfileDataSet.xsd</DependentUpon>
@@ -1185,6 +1261,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resoflexclienthandlingsystemDataSet.xsc">
+      <DependentUpon>resoflexclienthandlingsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="resoflexclienthandlingsystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>resoflexclienthandlingsystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="resoflexclienthandlingsystemDataSet.xss">
+      <DependentUpon>resoflexclienthandlingsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskDue.xsc">
+      <DependentUpon>TaskDue.xsd</DependentUpon>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskDue.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaskDue.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskDue.xss">
+      <DependentUpon>TaskDue.xsd</DependentUpon>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskEff.xsc">
+      <DependentUpon>TaskEff.xsd</DependentUpon>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskEff.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaskEff.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StaffForms\StaffReports\TaskEff.xss">
+      <DependentUpon>TaskEff.xsd</DependentUpon>
+    </None>
     <None Include="EventForms\EventReports\PerformaneDataSet.xsc">
       <DependentUpon>PerformaneDataSet.xsd</DependentUpon>
     </None>

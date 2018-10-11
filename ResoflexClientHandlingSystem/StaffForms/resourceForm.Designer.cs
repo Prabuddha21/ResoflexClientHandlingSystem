@@ -46,6 +46,7 @@
             this.homeBtn = new MetroFramework.Controls.MetroButton();
             this.selectResourceTxtbox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.demo_res_btn = new MetroFramework.Controls.MetroButton();
             this.profilebtn = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.ResGrid)).BeginInit();
             this.SuspendLayout();
@@ -202,6 +203,7 @@
             this.ResGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ResGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ResGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ResGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -239,7 +241,7 @@
             this.ResGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ResGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.ResGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ResGrid.Size = new System.Drawing.Size(441, 321);
+            this.ResGrid.Size = new System.Drawing.Size(530, 445);
             this.ResGrid.TabIndex = 18;
             this.ResGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             // 
@@ -247,9 +249,9 @@
             // 
             this.UpdateResBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UpdateResBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.UpdateResBtn.Location = new System.Drawing.Point(653, 66);
+            this.UpdateResBtn.Location = new System.Drawing.Point(754, 66);
             this.UpdateResBtn.Name = "UpdateResBtn";
-            this.UpdateResBtn.Size = new System.Drawing.Size(120, 26);
+            this.UpdateResBtn.Size = new System.Drawing.Size(108, 26);
             this.UpdateResBtn.TabIndex = 19;
             this.UpdateResBtn.Text = "Update";
             this.UpdateResBtn.UseSelectable = true;
@@ -259,9 +261,9 @@
             // 
             this.DelResBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DelResBtn.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.DelResBtn.Location = new System.Drawing.Point(518, 66);
+            this.DelResBtn.Location = new System.Drawing.Point(640, 66);
             this.DelResBtn.Name = "DelResBtn";
-            this.DelResBtn.Size = new System.Drawing.Size(120, 26);
+            this.DelResBtn.Size = new System.Drawing.Size(108, 26);
             this.DelResBtn.TabIndex = 20;
             this.DelResBtn.Text = "Delete";
             this.DelResBtn.UseSelectable = true;
@@ -273,7 +275,7 @@
             this.homeBtn.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("homeBtn.BackgroundImage")));
             this.homeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeBtn.Location = new System.Drawing.Point(384, 7);
+            this.homeBtn.Location = new System.Drawing.Point(428, 7);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(30, 24);
@@ -287,7 +289,7 @@
             // 
             // 
             this.selectResourceTxtbox.CustomButton.Image = null;
-            this.selectResourceTxtbox.CustomButton.Location = new System.Drawing.Point(93, 1);
+            this.selectResourceTxtbox.CustomButton.Location = new System.Drawing.Point(224, 1);
             this.selectResourceTxtbox.CustomButton.Name = "";
             this.selectResourceTxtbox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.selectResourceTxtbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -305,7 +307,7 @@
             this.selectResourceTxtbox.SelectionLength = 0;
             this.selectResourceTxtbox.SelectionStart = 0;
             this.selectResourceTxtbox.ShortcutsEnabled = true;
-            this.selectResourceTxtbox.Size = new System.Drawing.Size(115, 23);
+            this.selectResourceTxtbox.Size = new System.Drawing.Size(246, 23);
             this.selectResourceTxtbox.TabIndex = 26;
             this.selectResourceTxtbox.UseSelectable = true;
             this.selectResourceTxtbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -321,6 +323,16 @@
             this.metroLabel2.TabIndex = 25;
             this.metroLabel2.Text = "Search";
             // 
+            // demo_res_btn
+            // 
+            this.demo_res_btn.Location = new System.Drawing.Point(128, 357);
+            this.demo_res_btn.Name = "demo_res_btn";
+            this.demo_res_btn.Size = new System.Drawing.Size(96, 29);
+            this.demo_res_btn.TabIndex = 27;
+            this.demo_res_btn.Text = "Demo";
+            this.demo_res_btn.UseSelectable = true;
+            this.demo_res_btn.Click += new System.EventHandler(this.demo_res_btn_Click);
+            //
             // profilebtn
             // 
             this.profilebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -339,6 +351,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(889, 578);
+            this.Controls.Add(this.demo_res_btn);
             this.ClientSize = new System.Drawing.Size(800, 454);
             this.Controls.Add(this.profilebtn);
             this.Controls.Add(this.selectResourceTxtbox);
@@ -379,6 +393,7 @@
         private MetroFramework.Controls.MetroButton homeBtn;
         private MetroFramework.Controls.MetroTextBox selectResourceTxtbox;
         private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroButton demo_res_btn;
         private MetroFramework.Controls.MetroButton profilebtn;
     }
 }

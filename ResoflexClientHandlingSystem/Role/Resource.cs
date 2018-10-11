@@ -38,7 +38,7 @@ namespace ResoflexClientHandlingSystem.Role
             this.TotalQty = totalQty;
             this.AvailableQty = availableQty;
         }
-
+        
         public Resource(int resourceId, int totalQty)
         {
             this.resourceId = resourceId;

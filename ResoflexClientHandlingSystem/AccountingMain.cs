@@ -25,10 +25,17 @@ namespace ResoflexClientHandlingSystem
             if (Userglobals.uname == "")
             {
                 profilebtn.Visible = false;
+                metroTile2.Visible = false;
+                metroTile3.Visible = false;
+                Project.Visible = false;
 
             }
             else
             {
+                if (Userglobals.priv != "ADM")
+                {
+                    metroTile3.Visible = false;
+                }
                 profilebtn.Visible = true;
                 profilebtn.Text = Userglobals.uname;
 

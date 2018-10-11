@@ -275,7 +275,7 @@ namespace ResoflexClientHandlingSystem
 
         private void reportbtn_Click(object sender, EventArgs e)
         {
-            Report rep = new Report();
+            Reports rep = new Reports();
             rep.Show();
         }
 

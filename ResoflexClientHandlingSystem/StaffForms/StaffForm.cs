@@ -299,6 +299,8 @@ namespace ResoflexClientHandlingSystem
             //mem.Show();
 
             //closeForm();
+
+
         }
 
         private void AddMemberTab_Click(object sender, EventArgs e)
@@ -403,7 +405,22 @@ namespace ResoflexClientHandlingSystem
         {
 
         }
-
+        
+        private void demo_stf_btn_Click(object sender, EventArgs e)
+        {
+            fNameTxtBox.Text = "Sajith";
+            lNameTxtBox.Text = "Perera";
+            addNICtxtBox.Text = "882232576v";
+            pAddTxtBox.Text = "No.15, Peradeniya Road, Kandy.";
+            sAddTxtBox.Text = "No.23/2, Third Lane, Malabe.";
+            telMobileTxtBox.Text = "0712455455";
+            telLanTxtBox.Text = "0812225073";
+            emailTxtBox.Text = "sajithperera@gmail.com";
+            fbTxtBox.Text = "Sajith Perera";
+            linkedTxtBox.Text = "SP Perera";
+            basicSalTxtBox.Text = "50000";
+            otRateTxtBox.Text = "50";
+        }
         private void profilebtn_Click(object sender, EventArgs e)
         {
             ProfileForm prffrm = new ProfileForm();

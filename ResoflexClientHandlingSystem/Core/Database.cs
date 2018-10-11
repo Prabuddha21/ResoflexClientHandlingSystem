@@ -751,6 +751,35 @@ namespace ResoflexClientHandlingSystem.Core
             }
         }
 
+        public static Boolean deleteResource(Resource resource)
+        {
+            try
+            {
+                DBConnection.updateDB("delete from resource where resource_id = " + resource.ResourceId + ";");
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Something went wrong!\n" + e.GetType(), "Resource Delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return false;
+            }
+        }
+
+        public static void updateResource(Resource resource)
+        {
+            try
+            {
+
+                DBConnection.updateDB("update resource set name = '" + resource.Name + "', value = " + resource.Value + ", " +
+                    " total_qty = " + resource.TotalQty + ", available_qty = " + resource.AvailableQty + " where resource_id=" + resource.ResourceId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Something went wrong! '" + ex + "'", "Update resource", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         //Requesting admin permission
 
@@ -761,7 +790,6 @@ namespace ResoflexClientHandlingSystem.Core
                 DBConnection.updateDB("insert into notification(user_id, function_id, statues, main_id, sub_id) " +
                     "values(" + notification.UserId + ", " + notification.FuctionId + ", " + notification.Status + ", " + notification.MainId + ", " + notification.SubId + ")");
             }
-
             catch (Exception exp)
             {
                 MessageBox.Show("Something went wrong!\n" + exp, "Saving Request permissions", MessageBoxButtons.OK, MessageBoxIcon.Error);

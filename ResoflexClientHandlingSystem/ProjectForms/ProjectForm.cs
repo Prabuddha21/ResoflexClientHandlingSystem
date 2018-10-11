@@ -43,7 +43,13 @@ namespace ResoflexClientHandlingSystem
             }
             else
             {
-                if (Userglobals.priv != "PM")
+                if (Userglobals.priv == "PM" || Userglobals.priv == "ADM")
+                {
+                    addProjectBtn.Visible = true;
+                    updateProjectBtn.Visible = true;
+                    metroButton1.Visible = true;
+                }
+                else
                 {
                     addProjectBtn.Visible = true;
                     updateProjectBtn.Visible = true;
